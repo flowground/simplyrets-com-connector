@@ -1,0 +1,81 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "residential",
+                "rental",
+                "multifamily",
+                "condominium",
+                "commercial",
+                "land",
+                "farm"
+            ]
+        },
+        "listingId": {
+            "required": false,
+            "type": "string"
+        },
+        "cities": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "brokers": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "agent": {
+            "required": false,
+            "type": "string"
+        },
+        "minprice": {
+            "required": false,
+            "type": "integer"
+        },
+        "startdate": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer"
+        },
+        "lastId": {
+            "required": false,
+            "type": "integer"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer"
+        },
+        "sort": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "listprice",
+                "-listprice",
+                "listdate",
+                "-listdate",
+                "beds",
+                "-beds",
+                "baths",
+                "-baths"
+            ]
+        },
+        "include": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

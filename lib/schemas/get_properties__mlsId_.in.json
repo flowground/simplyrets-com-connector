@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "mlsId": {
+            "required": true,
+            "type": "integer",
+            "format": "int64",
+            "default": 1005252
+        },
+        "include": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "enum": [
+                "association",
+                "agreement",
+                "garageSpaces",
+                "maintenanceExpense",
+                "parking",
+                "pool",
+                "rooms"
+            ]
+        }
+    }
+}

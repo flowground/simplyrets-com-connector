@@ -1,0 +1,217 @@
+{
+    "type": "object",
+    "properties": {
+        "q": {
+            "required": false,
+            "type": "string"
+        },
+        "status": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "enum": [
+                "Active",
+                "Pending",
+                "Closed",
+                "ActiveUnderContract",
+                "Hold",
+                "Withdrawn",
+                "Expired",
+                "Delete",
+                "Incomplete",
+                "ComingSoon"
+            ]
+        },
+        "type": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "enum": [
+                "residential",
+                "rental",
+                "multifamily",
+                "condominium",
+                "commercial",
+                "land",
+                "farm"
+            ]
+        },
+        "subtype": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "enum": [
+                "apartment",
+                "boatslip",
+                "singlefamilyresidence",
+                "deededparking",
+                "cabin",
+                "condominium",
+                "duplex",
+                "manufacturedhome",
+                "ownyourown",
+                "quadruplex",
+                "stockcooperative",
+                "townhouse",
+                "timeshare",
+                "triplex",
+                "manufacturedonland"
+            ]
+        },
+        "agent": {
+            "required": false,
+            "type": "string"
+        },
+        "brokers": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "minprice": {
+            "required": false,
+            "type": "integer"
+        },
+        "maxprice": {
+            "required": false,
+            "type": "integer"
+        },
+        "minarea": {
+            "required": false,
+            "type": "integer"
+        },
+        "maxarea": {
+            "required": false,
+            "type": "integer"
+        },
+        "minbaths": {
+            "required": false,
+            "type": "integer"
+        },
+        "maxbaths": {
+            "required": false,
+            "type": "integer"
+        },
+        "minbeds": {
+            "required": false,
+            "type": "integer"
+        },
+        "maxbeds": {
+            "required": false,
+            "type": "integer"
+        },
+        "maxdom": {
+            "required": false,
+            "type": "integer"
+        },
+        "minyear": {
+            "required": false,
+            "type": "integer"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer"
+        },
+        "lastId": {
+            "required": false,
+            "type": "integer"
+        },
+        "vendor": {
+            "required": false,
+            "type": "string"
+        },
+        "postalCodes": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "features": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "water": {
+            "required": false,
+            "type": "string"
+        },
+        "neighborhoods": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "cities": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "counties": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "points": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "include": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "enum": [
+                "association",
+                "agreement",
+                "garageSpaces",
+                "maintenanceExpense",
+                "parking",
+                "pool",
+                "rooms",
+                "taxYear",
+                "taxAnnualAmount"
+            ]
+        },
+        "sort": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "listprice",
+                "-listprice",
+                "listdate",
+                "-listdate",
+                "beds",
+                "-beds",
+                "baths",
+                "-baths"
+            ]
+        },
+        "count": {
+            "required": false,
+            "type": "integer"
+        }
+    }
+}
